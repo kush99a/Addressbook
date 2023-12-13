@@ -15,8 +15,8 @@ public class Program
         {
             Console.WriteLine("1. Registrera som kund \n");
             Console.WriteLine("2. Visa alla kunder \n");
-            Console.WriteLine("3. Avsluta \n");
-            Console.WriteLine("4. Ta bort kund");
+            Console.WriteLine("3. Ta bort kund");
+            Console.WriteLine("4. Avsluta \n");
 
             string result = Console.ReadLine()!;
             switch (result)
@@ -29,14 +29,13 @@ public class Program
                     MenuServices.showallcustomers();
                     break;
                 case "3":
-                    active = false;
-                    break;
-                case "4":
                     MenuServices.removecustomer();
                     Console.Clear();
                     break;
+                case "4":
+                    active = false;
+                    break;
                 default:
-                    Console.WriteLine("inget");
                     Console.Clear();
                     break;
 
