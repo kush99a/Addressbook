@@ -39,7 +39,7 @@ internal class MenuServices
 
         foreach (IPrivateCustomer customer in customers)
         {
-            Console.WriteLine($"{customer.FirstName} {customer.LastName} {customer.Email} ");
+            Console.WriteLine($"{customer.FirstName} {customer.LastName} {customer.Email}{customer.PhoneNumber} {customer.Address} ");
         }
     }
 
