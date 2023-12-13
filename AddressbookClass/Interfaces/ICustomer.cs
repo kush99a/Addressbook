@@ -1,5 +1,7 @@
 ﻿namespace AddressbookClass.Interfaces;
 
+
+
 public interface ICustomer
 {
     Guid Id { get; set; }

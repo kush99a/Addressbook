@@ -12,7 +12,7 @@ public class FileService : IFileService
         try
         {
             {
-                using var sw = new StreamWriter(filePath, true);
+                using var sw = new StreamWriter(filePath);
                 sw.WriteLine(content);
                 return true;
             }

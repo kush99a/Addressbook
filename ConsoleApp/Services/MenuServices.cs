@@ -36,11 +36,38 @@ internal class MenuServices
     public static void showallcustomers()
     {
         var customers = _customerservice.GetCustomersFromList();
-
+        Console.Clear();
         foreach (IPrivateCustomer customer in customers)
         {
-            Console.WriteLine($"{customer.FirstName} {customer.LastName} {customer.Email} {customer.PhoneNumber} {customer.Address} ");
+            Console.WriteLine($"""
+            Förnamn: {customer.FirstName} 
+            Efternamn: {customer.LastName} 
+            Mail: {customer.Email} 
+            Telefonnummer: {customer.PhoneNumber} 
+            Adress: {customer.Address}
+            -----------------------------------------
+            """);
+            
         }
+        Console.WriteLine("Välj ett nytt alternativ: \n");
+    }
+
+    public static void GetCustomer()
+    {
+        Console.WriteLine("Email:");
+        var customer = (IPrivateCustomer) _customerservice.GetCustomerFromList(Console.ReadLine());
+        Console.Clear();
+        Console.WriteLine($"""
+            Förnamn: {customer.FirstName} 
+            Efternamn: {customer.LastName} 
+            Mail: {customer.Email} 
+            Telefonnummer: {customer.PhoneNumber} 
+            Adress: {customer.Address}
+            -----------------------------------------
+            Välj ett nytt alternativ:
+
+            """);
+      
     }
 
     public static void removecustomer()

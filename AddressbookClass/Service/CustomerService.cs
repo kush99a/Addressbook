@@ -1,6 +1,7 @@
 ﻿
 
 using AddressbookClass.Interfaces;
+using AddressbookClass.Models;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
