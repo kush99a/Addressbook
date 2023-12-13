@@ -15,7 +15,7 @@ public class Program
         {
             Console.WriteLine("1. Registrera som kund \n");
             Console.WriteLine("2. Visa alla kunder \n");
-            Console.WriteLine("3. Ta bort kund");
+            Console.WriteLine("3. Ta bort kund \n");
             Console.WriteLine("4. Avsluta \n");
 
             string result = Console.ReadLine()!;
