@@ -12,6 +12,3 @@ public interface ICustomer
 
     string Address { get; set; }
 }
-
-
-

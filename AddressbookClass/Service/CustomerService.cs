@@ -24,7 +24,7 @@ public class CustomerService : ICustomerService
                 _customers.Add(customer);
 
                 string json = JsonConvert.SerializeObject(_customers, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
-
+               
 
                 var result = _fileservice.SaveContentToFile(_filepath, json);
                 return result; 

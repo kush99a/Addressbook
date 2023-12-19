@@ -33,7 +33,7 @@ internal class MenuServices
         _customerservice.AddCustomerTolist(customer);
     }
 
-    public static void showallcustomers()
+    public static void ShowAllCustomers()
     {
         var customers = _customerservice.GetCustomersFromList();
         Console.Clear();
@@ -70,7 +70,7 @@ internal class MenuServices
       
     }
 
-    public static void removecustomer()
+    public static void RemoveCustomer()
     {
         Console.WriteLine("Email: ");
         _customerservice.RemoveCustomer(Console.ReadLine());

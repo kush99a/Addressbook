@@ -27,13 +27,13 @@ public class Program
                     Console.Clear();
                     break;
                 case "2":
-                    MenuServices.showallcustomers();
+                    MenuServices.ShowAllCustomers();
                     break;
                 case "3":
                     MenuServices.GetCustomer();
                     break;
                 case "4":
-                    MenuServices.removecustomer();
+                    MenuServices.RemoveCustomer();
                     Console.Clear();
                     break;
                 case "5":
